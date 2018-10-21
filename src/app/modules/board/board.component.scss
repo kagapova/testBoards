@@ -1,0 +1,29 @@
+.board{
+  display: inline-flex;
+}
+
+.dropzone {
+  padding: 20px;
+  margin: 20px 20px;
+  background: lightgray;
+  border: 1px solid black;
+  width: 20%;
+
+  &.dropzone-activated {
+    border: 1px solid red;
+  }
+
+  &.dropzone-entered {
+    background-color: #efefef;
+  }
+}
+.box {
+  background: #BADA55;
+  border: 1px solid black;
+  display: inline-block;
+  margin-bottom: 10px;
+
+  &.dragging {
+  }
+}
+

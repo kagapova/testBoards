@@ -1,0 +1,44 @@
+<div class="board">
+<div class="dropzone" appDropzone (drop)="move(currentCard, dropzone1)"
+     (remove)="move(currentCard, dropzone1)">
+  <div *ngFor="let card of dropzone1" class="box"
+       appDroppable (dragStart)="currentCard = card">
+    <app-card [card]="card"></app-card>
+    <div class="box" *appDraggableHelper>
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+</div>
+<div class="dropzone " appDropzone (drop)="move(currentCard, dropzone2)"
+     (remove)="move(currentCard, dropzone2)">
+  <div *ngFor="let card of dropzone2" class="box"
+       appDroppable (dragStart)="currentCard = card">
+    <app-card [card]="card"></app-card>
+    <div class="box" *appDraggableHelper>
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+</div>
+<div class="dropzone" appDropzone (drop)="move(currentCard, dropzone3)"
+     (remove)="move(currentCard, dropzone3)">
+  <div *ngFor="let card of dropzone3" class="box"
+       appDroppable (dragStart)="currentCard = card">
+    <app-card [card]="card"></app-card>
+    <div class="box" *appDraggableHelper>
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+</div>
+<div class="dropzone " appDropzone (drop)="move(currentCard, dropzone4)"
+     (remove)="move(currentCard, dropzone4)">
+  <div *ngFor="let card of dropzone4" class="box"
+       appDroppable (dragStart)="currentCard = card">
+    <app-card [card]="card"></app-card>
+    <div class="box" *appDraggableHelper>
+      <app-card [card]="card"></app-card>
+    </div>
+  </div>
+</div>
+</div>
+
+

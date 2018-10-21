@@ -1,0 +1,21 @@
+<div *ngIf="user && userCards">
+  <h4>Name:{{user.name}}</h4>
+  <p>username:{{user.username}}</p>
+  <p>email{{user.email}}</p>
+  <h4>Address</h4>
+  <p>street:{{user.address.street}}</p>
+  <p>suite:{{user.address.suite}}</p>
+  <p>city:{{user.address.city}}</p>
+  <p>zipcode:{{user.address.zipcode}}</p>
+  <p>Geo: lat:{{user.address.geo.lat}} lng:{{user.address.geo.lng}}</p>
+  <p>phone:{{user.phone}}</p>
+  <p>website:{{user.website}}</p>
+  <h4>Company</h4>
+  <p>name:{{user.company.name}}</p>
+  <p>catchPhrase:{{user.company.catchPhrase}}</p>
+  <p>bs:{{user.company.bs}}</p>
+
+  <div *ngFor="let card of userCards">
+    <app-card [card]="card"></app-card>
+  </div>
+</div>

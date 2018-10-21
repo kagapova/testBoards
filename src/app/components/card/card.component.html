@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{card.title}}</h5>
+    <p class="card-text">id:{{card.id}}</p>
+    <p class="card-text">completed:{{card.completed}}</p>
+    <a [routerLink]="['/user', card.userId]" class="btn btn-primary">User:{{card.userId}}</a>
+  </div>
+</div>
